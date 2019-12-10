@@ -1,0 +1,222 @@
+{% load staticfiles %}
+<style type="text/css">
+@keyframes blinky {
+    0% {background-color:{{ page_color }}}
+    5%{background-color: #333333;}
+    95%{background-color: #333333;}
+    100% {background-color:{{ page_color }}}
+}</style>
+<section class="CSSTEL navbar">
+	<header class="header">
+		<a class="a-image-logo" href="{% url 'index' %}">
+			<picture>
+				<source type="image/webp" srcset="{% static 'vitrine/img/webp/yannick3.webp' %}">
+			    <source type="image/png" srcset="{% static 'vitrine/img/yannick3.png' %}">
+				<img class="image_logo" alt="logo objectifecologie" src="{% static 'vitrine/img/yannick3.png' %}">
+			</picture>
+		</a>
+		<div class="navbar-2">
+			<a href="">
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/icone-compte-black.webp' %}">
+					<source type="image/png" srcset="{% static 'vitrine/img/icone-compte-black.png' %}">
+					<img class="icone-compte" alt="icone-compte" src="{% static 'vitrine/img/icone-compte-black.png' %}">
+				</picture>
+			</a>
+		</div>
+		<div class="navbar-1">
+			<div role ="button" onclick="openNav()" class="icone-wrap">
+				&#9776;
+			</div>
+		</div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="{% url 'index' %}">
+				Particulier
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/flechedown.webp' %}">
+			    	<source type="image/png" srcset="{% static 'vitrine/img/flechedown.png' %}">
+					<img class="flechedown" alt="flechedown" src="{% static 'vitrine/img/flechedown.png' %}">
+				</picture>
+			</a>
+			<a href="{% url 'index' %}">
+				Professsionnel
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/flechedown.webp' %}">
+			    	<source type="image/png" srcset="{% static 'vitrine/img/flechedown.png' %}">
+					<img class="flechedown" alt="flechedown" src="{% static 'vitrine/img/flechedown.png' %}">
+				</picture>
+			</a>
+			<a href="{% url 'entretien' %}">Entretien</a>
+			<a href="{% url 'contact' %}">Aide & Contact</a>
+		</div>
+	</header>
+</section>
+
+
+
+
+
+
+<section class="CSSPC navbar">
+	<header class="header">
+			<a href="{% url 'index' %}" style="width: 20%;">
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/yannick3.webp' %}">
+			    	<source type="image/png" srcset="{% static 'vitrine/img/yannick3.png' %}">
+					<img  alt="logo objectifecologie" style="width: 250px; margin: 11px 0 0 40px;" src="{% static 'vitrine/img/yannick3.png' %}">
+				</picture>
+				
+				
+			</a>
+			<div class="navbar-1">
+				<div class="item-navbar">
+					<a href="{% url 'contact' %}" class="item-navbar3">Aide & Contact</a>
+				</div>
+				<div class="item-navbar" style="width: 110px;">
+					<a href="{% url 'entretien' %}" class="item-navbar2">Entretien</a>
+				</div>
+				<div class="item-navbar item-navbar-dropdown" style="z-index: 0;">
+					<button class="dropbtn">Nos offres</button><img class="flechedown" alt="flechedown" src="{% static 'vitrine/img/flechedown.png' %}">
+					<div class="nav_sub_menu dropdown-content">
+						<div class="div_sub_menu">
+							<div class="part_sub_menu1">
+								<div class="sub_menu_content">
+									<h2 class="nav_sub_menu_titre">En savoir plus</h2>
+									<ul class="nav_sub_menu_list">
+										<li class="nav_sub_menu_list_item particulier green" id="particulier" onmouseover="myFunction1()">Particulier</li>
+										<li class="nav_sub_menu_list_item professionnel" id="professionnel" onmouseover="myFunction2()">Professionnel</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="part_sub_menu2 part_sub_menu2_a show" id="a">
+								<div style="width: 50%;">
+									<h2 class="titre_sub_menu_a">Particulier</h2>
+									<ul class="list_sub_menu_a">
+										<li class="item_sub_menu_a"><a href="{% url 'pompe_chaleur' %}">Pompe à chaleur →</a></li>
+										<li class="item_sub_menu_a"><a href="{% url 'ballon_thermo' %}">Ballon Thermodynamique →</a></li>
+										<li class="item_sub_menu_a"><a href="{% url 'index' %}">Isolation à 1€ →</a></li>
+										<li class="item_sub_menu_a"><a href="{% url 'domotique' %}">Gestionnaire De Domotique →</a></li>
+										<li class="item_sub_menu_a"><a href="{% url 'chaudiere' %}">Chaudière →</a></li>
+									</ul>
+								</div>
+								<div style="text-align: center; margin-right: 50px;">
+									<picture>
+										<source type="image/webp" srcset="{% static 'vitrine/img/webp/pc-particulier.webp' %}">
+									    <source type="image/png" srcset="{% static 'vitrine/img/pc-particulier.png' %}">
+										<img class="pc-particulier" src="{% static 'vitrine/img/pc-particulier.png' %}" alt="pc-particulier">
+									</picture>
+									<p style="margin-bottom: 30px;">Notre Plateforme client unique vous permet de gérer vos projets en toute simplicité.</p>
+								</div>
+							</div>
+							<div class="part_sub_menu2 part_sub_menu2_b" id="b">
+								<div style="width: 50%;">
+									<h2 class="titre_sub_menu_a">Professionnel</h2>
+									<ul class="list_sub_menu_a">
+										<li class="item_sub_menu_a"><a href="{% url 'index' %}">Professionnels du bâtiment →</a></li>
+										<li class="item_sub_menu_a"><a href="{% url 'index' %}">Bailleur →</a></li>
+										<li class="item_sub_menu_a"><a href="{% url 'index' %}">Mairie →</a></li>
+										<li class="item_sub_menu_a"><a href="{% url 'index' %}">Établissement scolaire →</a></li>
+										<li class="item_sub_menu_a"><a href="{% url 'index' %}">Syndicat de copropriété →</a></li>
+									</ul>
+								</div>
+								<div style="text-align: center; margin-right: 50px;">
+									<picture>
+										<source type="image/webp" srcset="{% static 'vitrine/img/webp/pc-particulier.webp' %}">
+									    <source type="image/png" srcset="{% static 'vitrine/img/pc-particulier.png' %}">
+										<img class="pc-particulier" src="{% static 'vitrine/img/pc-particulier.png' %}" alt="pc-particulier">
+									</picture>
+									<p style="margin-bottom: 30px;">Nos solutions adaptées à tous vos chantiers.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-2" id="blink">
+				<a href="">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icone-compte.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/icone-compte.png' %}">
+						<img class="icone-compte" alt="icone-compte" src="{% static 'vitrine/img/icone-compte.png' %}">
+					</picture>
+				Mon espace client</a>
+			</div>
+	</header>
+</section>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction1() {
+  if(!document.getElementById("a").classList.contains("show"))
+  {
+  	document.getElementById("a").classList.toggle("show");
+  	document.getElementById("b").classList.toggle("hidden");
+ 	document.getElementById("b").classList.remove("show");
+  	document.getElementById("a").classList.remove("hidden");
+  	document.getElementById("particulier").classList.toggle("green");
+  	document.getElementById("professionnel").classList.toggle("black");
+ 	document.getElementById("professionnel").classList.remove("green");
+  	document.getElementById("particulier").classList.remove("black");
+  }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+      if (openDropdown.classList.contains('hidden')) {
+        openDropdown.classList.remove('hidden');
+      }
+    }
+  }
+}
+
+function myFunction2() {
+	if(!document.getElementById("b").classList.contains("show"))
+  {
+  	document.getElementById("b").classList.toggle("show");
+  	document.getElementById("a").classList.toggle("hidden");
+  	document.getElementById("a").classList.remove("show");
+  	document.getElementById("b").classList.remove("hidden");
+  	document.getElementById("professionnel").classList.toggle("green");
+  	document.getElementById("particulier").classList.toggle("black");
+ 	document.getElementById("particulier").classList.remove("green");
+  	document.getElementById("professionnel").classList.remove("black");
+  }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+      if (openDropdown.classList.contains('hidden')) {
+        openDropdown.classList.remove('hidden');
+      }
+    }
+  }
+}
+function openNav() {
+  document.getElementById("mySidenav").classList = "sidenav display-block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").classList = "sidenav animation-display-none";
+  setTimeout( function(){document.getElementById("mySidenav").classList = "sidenav display-none";}, 450);
+}
+</script>

@@ -1,0 +1,61 @@
+
+{% load staticfiles %}
+
+<section class="popup">
+	<div class="div-btn-discutons CSSPC" id="div-btn-discutons">
+		<button onclick="popup1()" style="background-color: {{ page_color }}" class="btn-discutons">
+			<picture>
+				<source type="image/webp" srcset="{% static 'vitrine/img/webp/telephone-discutons.webp' %}">
+			    <source type="image/png" srcset="{% static 'vitrine/img/telephone-discutons.png' %}">
+				<img class="img-btn-discutons" alt="telephone-discutons" src="{% static 'vitrine/img/telephone-discutons.png' %}">
+			</picture>
+		</button>
+	</div>
+	<div class="div-btn-discutons-tel CSSTEL" id="div-btn-discutons-tel">
+		<button onclick="popuptel1()" class="btn-discutons-tel"><picture>
+			<source type="image/webp" srcset="{% static 'vitrine/img/webp/comments.webp' %}">
+		    <source type="image/png" srcset="{% static 'vitrine/img/comments.png' %}">
+			<img class="image_comments" alt="comments objectifecologie" src="{% static 'vitrine/img/comments.png' %}">
+		</picture></button>
+		
+	</div>
+	<div id="myDropdown" class="div-discutons">
+		<div class="discutons-titre" style="background-color: {{ page_color }}">
+			<h2>Nous contacter</h2>
+			<div role="button" onclick="popup2()" class="taille-div-rectangle CSSPC"><div class="rectangle"></div></div>
+			<div role="button" onclick="popuptel2()" class="taille-div-rectangle CSSTEL"><div class="rectangle"></div></div>
+		</div>
+		<div class="discutons-tel">
+			<h2>Appelez-nous</h2>
+			<p>Nos équipes sont disponibles de <b>8h à 19h</b> du <b>lundi au vendredi</b>.</p>
+			<p class="text-tel" style="color:{{ page_color }}">06 00 00 00 00</p>
+		</div>
+		<div class="rectangle-sep" style="background-color:{{ page_color }}">
+		</div>
+		<div class="discutons-email">
+			<h2>Vous préférez nous envoyer un e-mail ?</h2>
+			<p>Aidez-nous à comprendre votre problème et à répondre précisément à votre question en remplissant le formulaire de contact ci-dessous.</p>
+			<center><a href="" class="link-btn-discutons-email"><p class="btn-discutons-email" style="background-color: {{ page_color }}">Formulaire de contact</p></a></center>
+		</div>
+	</div>
+</section>
+
+<script>
+
+function popuptel1() {
+  document.getElementById("myDropdown").style.display = 'flex';
+  document.getElementById("div-btn-discutons-tel").className = 'CSSPC';
+}
+function popuptel2() {
+  document.getElementById("div-btn-discutons-tel").className = "div-btn-discutons-tel CSSTEL";
+  document.getElementById("myDropdown").style.display = 'none';
+}
+function popup1() {
+  document.getElementById("myDropdown").style.display = 'flex';
+  document.getElementById("div-btn-discutons").className = 'CSSTEL';
+}
+function popup2() {
+  document.getElementById("div-btn-discutons").className = "div-btn-discutons CSSPC";
+  document.getElementById("myDropdown").style.display = 'none';
+}
+</script>

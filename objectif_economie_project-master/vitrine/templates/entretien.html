@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block seo %}
+<meta name="Description" content="Objectif Économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:description" content="Objectif Économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:title" content="Objectif Économie | Offre d'entretien tout compris !">
+<title>Objectif Économie | Offre d'entretien tout compris !</title>
+
+<link rel="canonique" href="https://www.objectifeconomie.fr/" />
+<link type="text/css" href="{% static 'vitrine/css/entretien_pc.css' %}" media="only screen and (min-width: 992px)" rel="stylesheet">
+<link type="text/css" href="{% static 'vitrine/css/entretien_tel.css' %}" media="only screen and (max-width: 992px)" rel="stylesheet">
+{% endblock %}
+
+{% block link %}
+{% endblock %}
+
+{% block content %}
+
+<section class="bande-principal-entretien">
+	
+	
+	<div class="div-bande-principal-entretien">
+		<h1 class="titre-bande-principal">Une offre d'entretien tout compris</h1>
+		<p class="text-bande-principal">Objectif Économie vous accompagne au quotidien pour vous aider à faire des économies</p>
+	</div>
+	<div class="div-bande-principal-right">
+		<div class="div-bande-principal-text">
+			<h2 class="titre-bp">Entretenez votre matériel</h2>
+			<p class="text-bp">Avec l'offre d'entretien économisez jusqu'à <span class="span-text-baniere">12%</span> d'économies d'énergie !</p>
+			<a href="{% url 'index' %}" class="link-baniere">
+				<p>Souscrire en ligne</p>
+			</a>
+		</div>
+	</div>
+	<div class="filtre-black"></div>
+</section>
+
+<section class="bande-br" >
+	<div>
+		<div class="div-br" style="background-color: white;">
+			<h2 class="titre-br">Les 3 bonnes raisons de choisir l'offre d'entretien</h2>
+			<div class="block-br">
+				<div class="sub-block-br">
+					<div class="sub-block-br-1">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/valider-bleue.webp' %}">
+				            <source type="image/png" srcset="{% static 'vitrine/img/valider-bleue.png' %}">
+				            <img class="valider-bleue" src="{% static 'vitrine/img/webp/valider-bleue.webp' %}" alt="ban-entretien">
+						</picture>
+					</div>
+					<div class="sub-block-br-2">
+						<h2 class="titre-block-br">Une couverture en cas de sinistre</h2>
+						<p class="text-block-br">En cas de sinistre, les assurances vous demanderont cette attestation d'entretien pour vous dédommager.</p>
+					</div>
+				</div>
+				<div class="bande-bleur-br"></div>
+				<div class="sub-block-br">
+					<div class="sub-block-br-1">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/valider-bleue.webp' %}">
+				            <source type="image/png" srcset="{% static 'vitrine/img/valider-bleue.png' %}">
+				            <img class="valider-bleue" src="{% static 'vitrine/img/webp/valider-bleue.webp' %}" alt="ban-entretien">
+						</picture>
+					</div>
+					<div class="sub-block-br-2">
+						<h2 class="titre-block-br">Une sécurité assurée</h2>
+						<p class="text-block-br">Un matériel bien entretenu est un matériel fiable. Faites attention à votre sécurité et celle de vos proches.</p>
+					</div>
+				</div>
+				<div class="bande-bleur-br"></div>
+				<div class="sub-block-br">
+					<div class="sub-block-br-1">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/valider-bleue.webp' %}">
+				            <source type="image/png" srcset="{% static 'vitrine/img/valider-bleue.png' %}">
+				            <img class="valider-bleue" src="{% static 'vitrine/img/webp/valider-bleue.webp' %}" alt="ban-entretien">
+						</picture>
+					</div>
+					<div class="sub-block-br-2">
+						<h2 class="titre-block-br">Une durée de vie prolongée</h2>
+						<p class="text-block-br">Entretenir son matériel est nécessaire pour allongez sa durée de vie et faire des économies.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bande-4d">
+	<div style="width: 100%;background-color: rgba(0, 0, 0, 1);height: 600px;">
+		<picture>
+			<source type="image/webp" srcset="{% static 'vitrine/img/webp/ban-entretien.webp' %}">
+            <source type="image/png" srcset="{% static 'vitrine/img/ban-entretien.png' %}">
+            <img style="transform: scaleX(-1);height: 600px;"class="ban_entretien_chaudiere" src="{% static 'vitrine/img/webp/ban-entretien.webp' %}" alt="ban-entretien">
+		</picture>
+	</div>
+	<div class="position-block-4d">
+		<div style="width: 50%;">
+			<div class="div-4d" style="padding-bottom: 30px;">
+				<div class="block-4d block-4d-1">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h2 class="titre-4d titre-4d-1">26€/mois</h2>
+							<div class="carre-4d carre-4d-1"></div>
+						</div>
+						<div class="flip-box-back">
+							<p class="text-4d text-4d-1">Une offre d'entretien tout compris pour seulement 26€/mois !</p>
+						</div>
+					</div>
+				</div>
+				<div class="block-4d block-4d-2">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h2 class="titre-4d titre-4d-2">Remplacement</h2>
+							<div class="carre-4d carre-4d-2"></div>
+						</div>
+						<div class="flip-box-back">
+							<p class="text-4d text-4d-2">La garantie d'un remplacement sans frais de votre matériel défectueux !</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="div-4d">
+				<div class="block-4d block-4d-3">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h2 class="titre-4d titre-4d-3">SAV</h2>
+							<div class="carre-4d carre-4d-3"></div>
+						</div>
+						<div class="flip-box-back">
+							<p class="text-4d text-4d-3">Un service après vente unique avec une équipe à vos cotés 7J/7 !</p>
+						</div>
+					</div>
+				</div>
+				<div class="block-4d block-4d-4">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h2 class="titre-4d titre-4d-4">Entretien annuel</h2>
+							<div class="carre-4d carre-4d-4"></div>
+						</div>
+						<div class="flip-box-back">
+							<p class="text-4d text-4d-4">Bénéficiez de l'entretien annuel obligatoire gratuitement !</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="width: 50%;">
+			<h2 class="titre-right-4d">Notre offre d'entretien</h2>
+			<p class="text-right-4d">L'indispensable pour un matériel sécurisé et en bon état</p>
+		</div>
+	</div>
+	</section>
+<section>
+	<div style="display: flex;justify-content: center;margin-top: 100px;">
+		<a href="" class="link-4d" style="margin-top: 65px;margin-bottom: 65px;margin-right: 15px;">
+			<picture>
+				<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-contact-white.webp' %}">
+	    		<source type="image/png" srcset="{% static 'vitrine/img/icon-contact-white.png' %}">
+				<img class="image-bo" id="icon-contact-bo" alt="image-bo" src="{% static 'vitrine/img/webp/icon-contact-white.webp' %}" style="position: absolute;
+    margin-top: -22px;
+    width: 3%;
+    margin-left: 95px;">
+			</picture>
+			<p class="text-link-4d">Nous contacter</p>
+		</a>
+		<a href="" class="link-4d" style="margin-top: 65px;margin-bottom: 65px;margin-left: 15px;">
+			<picture>
+				<source type="image/webp" srcset="{% static 'vitrine/img/webp/souscription-white.webp' %}">
+	    		<source type="image/png" srcset="{% static 'vitrine/img/souscription-white.png' %}">
+				<img class="image-bo" id="icon-contact-bo" alt="image-bo" src="{% static 'vitrine/img/webp/souscription-white.webp' %}" style="position: absolute;
+    margin-top: -22px;
+    width: 3%;
+    margin-left: 95px;">
+			</picture>
+			<p class="text-link-4d">Souscrire en ligne</p>
+		</a>
+	</div>	
+</section>
+{% endblock %}

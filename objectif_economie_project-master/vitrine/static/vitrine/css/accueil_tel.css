@@ -1,0 +1,927 @@
+@font-face
+{
+    font-family: "Gilroy-Medium";
+    src: url('../fonts/Gilroy-Medium.woff2');
+}
+/* Index */
+/* Bande Video */
+.a-image-logo{
+  margin-left:0;
+}
+.image_logo{
+  height:50px;
+}
+.icone-compte{
+  height:25px;
+}
+.block-baniere{
+  display:flex;
+  flex-direction:column;
+  margin-top:60px;
+}
+.no-webp .block-baniere-isolation{
+  background:url("../img/bandeau_isolation_mobile.png");
+  background-size:cover;
+}
+.webp .block-baniere-isolation{
+  background:url("../img/webp/bandeau_isolation_mobile.webp");
+  background-size:cover;
+}
+.no-webp .block-baniere-ballon-thermo{
+  background:url("../img/bandeau_thermo_mobile.png");
+  background-size:cover;
+}
+.webp .block-baniere-ballon-thermo{
+  background:url("../img/webp/bandeau_thermo_mobile.webp");
+  background-size:cover;
+}
+.no-webp .block-baniere-pompe-chaleur{
+  background:url("../img/bandeau_pompe_chaleur_mobile.png");
+  background-size:cover;
+}
+.webp .block-baniere-pompe-chaleur{
+  background:url("../img/webp/bandeau_pompe_chaleur_mobile.webp");
+  background-size:cover;
+}
+.no-webp .block-baniere-chaudiere{
+  background:url("../img/bandeau_chaudiere_mobile.png");
+  background-size:cover;
+}
+.webp .block-baniere-chaudiere{
+  background:url("../img/webp/bandeau_chaudiere_mobile.webp");
+  background-size:cover;
+}
+.no-webp .block-baniere-domotique{
+  background:url("../img/bandeau_gest_domotique_mobile.png");
+  background-size:cover;
+}
+.webp .block-baniere-domotique{
+  background:url("../img/webp/bandeau_gest_domotique_mobile.webp");
+  background-size:cover;
+}
+.image-bandeau-principal
+{
+    display:none;
+}
+.image-bandeau-principal_mobile{
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+}
+#block4{
+  height:650px;
+  display:flex;
+  flex-direction:column;
+  object-fit:fill;
+}
+.no-webp .bandeau-entretien-isolation{
+  background:url("../img/bandeau-entretien3_mobile.png");
+}
+.webp .bandeau-entretien-isolation{
+  background:url("../img/webp/bandeau-entretien3_mobile.webp");
+}
+.no-webp .bandeau-entretien-ballon-thermo{
+  background:url("../img/bandeau-entretien2-tel.png");
+}
+.webp .bandeau-entretien-ballon-thermo{
+  background:url("../img/webp/bandeau-entretien2-tel.webp");
+}
+.no-webp .bandeau-entretien-pompe-chaleur{
+  background:url("../img/bandeau-entretien1_mobile.png");
+}
+.webp .bandeau-entretien-pompe-chaleur{
+  background:url("../img/webp/bandeau-entretien1_mobile.webp");
+}
+.no-webp .bandeau-entretien-chaudiere{
+  background:url("../img/bandeau-entretien5_mobile.png");
+}
+.webp .bandeau-entretien-chaudiere{
+  background:url("../img/webp/bandeau-entretien5_mobile.webp");
+}
+.no-webp .bandeau-entretien-domotique{
+  background:url("../img/bandeau-entretien4_mobile.png");
+}
+.webp .bandeau-entretien-domotique{
+  background:url("../img/webp/bandeau-entretien4_mobile.webp");
+}
+#block2{
+  width:100%;
+}
+#block2{
+  display:none;
+}
+#block3_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+}
+.titre-baniere-entretien
+{
+    text-align: left;
+    font-family: Gilroy,sans-serif;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:150px;
+    margin-bottom:15px;
+    font-size: 53px;
+    width: 90%;
+    text-transform: uppercase;
+    line-height: initial;
+    font-weight: 800;
+    text-align:center;
+}
+.text-baniere-entretien
+{
+  width: 60%;
+  font-size: 17px;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom:15px;
+  color: white;
+  line-height: 20px;
+  text-align:center;
+}
+.bouton-baniere-entretien
+{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:15px;
+    box-shadow: 0 0 0 #cf5e5e80;
+    animation: pulse 1.5s infinite;
+    width: 70%;
+    height: 52px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #cf5e5ed4;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    font-family: Rubik,Gotham A,Gotham B,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: normal;
+}
+
+.block-carre-entretien
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    background-color:rgba(179,179,179,0.07);
+}
+.div-carre-entretien
+{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    width: 300px;
+    margin-left:auto;
+    margin-right:auto;
+    height: 226px;
+    background-color: red;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 -3px 24px 4px rgba(0,0,0,0.07); 
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+.form-rdv-baniere
+{
+    display: flex;
+    left:0;
+    right:0;
+    color:black;   
+    z-index:10;
+    font-size:17px;
+    background-color:#f2f2f2;
+    padding:20px;
+    justify-content:space-between;
+    height:70px;
+}
+.titre-baniere
+{
+    text-align: left;
+    font-family: "Gilroy-Medium";
+    color: #fff;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    margin-bottom: 40px;
+    font-size: 53px;
+    width: 90%;
+    text-transform: uppercase;
+    line-height: initial;
+
+    font-weight: bold;
+}
+.text-baniere
+{
+  font-family: "Gilroy-Medium";
+  width: 90%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 69px;
+  font-size: 17px;
+  color: white;
+}
+#video-fond {
+  overflow:;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+}
+#block6{
+  display:flex;
+  flex-direction:column;
+}
+.titre-pt{
+  margin-top: 80px;
+  margin-bottom:0;
+  font-family: Gilroy,sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 55px;
+}
+.div-pt
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.div-pt-block{
+  display:flex;
+  flex-direction:column;
+}
+.cercle-pt{
+  margin-left:auto;
+  margin-right:auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: #e5e5e5a6;
+}
+.titre-cercle-pt
+{
+    font-size: 23px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+    color: #094063!important;
+}
+.text-cercle-pt
+{    
+    text-align: center;
+    max-width: 100%;
+    font-size: 16px;
+    color: #000!important;
+}
+.bouton-baniere-pt
+{
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 0 0 rgba(104,142,183, 0.6);
+    animation: pulse 1.5s infinite;
+    width: 70%;
+    height: 52px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #688eb7;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    font-family: Rubik,Gotham A,Gotham B,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: normal;
+}
+.pulse.bouton-baniere-pt{
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+.block-offre
+{
+    transition: 0.5s;
+    height: 640px;
+    width: 300px;
+    border-radius: 4px;
+    border: solid 1px #5a5a5a45;
+    margin-top:50px;
+}
+.div-offre
+{
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*PAS FAIT*/
+
+
+
+
+
+
+.div-1-form-rdv
+{
+    cursor: pointer;
+    width: 59%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.flechedown-select
+{
+    position: absolute;
+    width: 40px;
+    margin-top: -13px;
+    z-index: 1;
+}
+.ml1
+{
+    margin-left: 50px;
+}
+.ml2
+{
+    margin-left: 10px;
+}
+.titre-select
+{
+    font-family: "PlexLight";
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text-select
+{
+    font-family: "PlexLight";
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.div-option-select
+{
+    cursor: pointer;
+    position: absolute;
+    height: 70px;
+    width: 353px;
+    background: white;
+    margin-top: 35px;
+    border-top: solid 1px #f2f2f2;
+}
+.hidden-drop-select {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.div-1-form-rdv:hover .hidden-drop-select
+{
+    display: block;
+}
+.link-div2-form
+{
+    text-decoration: none;
+    color: white;
+}
+.div-2-form-rdv
+{
+    transition: 1s;
+    width: 39%;
+    color: white; 
+}
+.div-2-form-rdv-bleu
+{
+    background-color: #006eff;
+}
+.div-2-form-rdv-bleu:hover
+{
+    transition:1s;
+    background-color:#00449e;
+}
+.div-2-form-rdv-rouge
+{
+    background-color: #cf5e5e;
+}
+.div-2-form-rdv-rouge:hover
+{
+    transition:1s;
+    background-color:#6f2525;
+}
+.div-2-form-rdv-vert
+{
+    background-color: #67b54a;
+}
+.div-2-form-rdv-vert:hover
+{
+    transition:1s;
+    background-color:#356f20;
+}
+.div-2-form-rdv-jaune
+{
+    background-color: #fde498;
+}
+.div-2-form-rdv-jaune:hover
+{
+    transition:1s;
+    background-color:#c9b166;
+}
+.div-2-form-rdv-marron
+{
+    background-color: #cfab8a;
+}
+.div-2-form-rdv-marron:hover
+{
+    transition:1s;
+    background-color:#8e7762;
+}
+.t1-div2-form
+{
+    font-family: "PlexLight";
+    text-align: center;
+    font-size: 17px;
+    margin-top: 23px;
+    font-weight: bold;
+}
+/* 1. Pas de support d'object-fit */
+@media (min-aspect-ratio: 16/9) {
+  #video-fond > video {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #video-fond > video {
+    width: 300%;
+    left: -100%;
+  }
+}
+/* 2. En cas de support d'object-fit, écrase les règles en (1) */
+@supports (object-fit: cover) {
+  #video-fond > video {
+    width: 100%;
+    height: 550px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+/* Fin Bande Video */
+
+/* Bande marques */
+#trans
+{
+    animation-name: transi;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;  
+}
+@keyframes transi {
+    0% {opacity: 1;}
+    30%{opacity: 1;}
+    40% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.transtext
+{
+    margin-top: -80px;
+    font-size: 16px;
+    font-family: "Gilroy-Medium";
+    color:#5e8fcf9e;²
+    font-weight: 700;
+    text-align: center;
+}
+#transtext
+{
+    animation-name: transitext;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;  
+}
+@keyframes transitext {
+    0% {opacity: 0;}
+    40%{opacity: 0;}
+    50% {opacity: 1;}
+    80% {opacity: 1;}
+    90% {opacity: 0;}
+    100%{opacity: 0;}
+}
+/* Fin bande marques */
+
+
+/* Bande nos offres */
+.titre-offre-1
+{
+    margin-top: 60px;
+    font-family: Gilroy,sans-serif;
+    color: #5e8fcf;
+    font-weight: 700;
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 80px;
+}
+.image-offre
+{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    height: 400px;
+}
+.titre-offre
+{
+    font-family: "Gilroy-Medium";
+    color: #24495F;
+    font-size: 1.3rem;
+    padding-left: 8px;
+    font-weight: bold;
+    line-height: 2rem;
+    overflow: hidden;
+}
+.text-offre
+{
+    font-family: "Gilroy-Medium";
+    color: #24495F;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1rem;
+    overflow: hidden;
+    margin-top: 13px;
+    margin-left: -23px;
+    width: 270px;
+}
+.link-offre
+{
+    transition: 0.5s;
+    position: absolute;
+    margin-top: -380px;
+    margin-left: 35px;
+    border-radius: 50px;
+    width: 230px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Frutiger";
+    opacity: 0;
+}
+.block-offre:hover
+{
+    background-color: #ffffff29;
+    .transition: 0.5s;
+}
+.block-offre:hover .div-offre
+{
+    opacity: 0.5;
+    .transition: 0.5s;
+}
+.block-offre:hover .link-offre
+{
+    
+    opacity: 1;
+    .transition: 0.5s;
+}
+.div-offre:hover .link-offre
+{
+    display: block;
+    .transition: 0.5s;
+}
+
+
+
+
+
+.bouton-chaud
+{
+    height: 100%;
+}
+.image-chaud
+{ 
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+.bouton-chaud:hover .image-chaud
+{
+    transition: 0.5s;
+    opacity: 0.7;
+}
+.bouton-chaud:hover .bouton-link-chaud
+{
+    display: block;
+}
+/* Fin Bande nos offres*/
+
+/*Bande offre entretien*/
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(207,94,94, 0.6);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(207,94,94, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(207,94,94, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(207,94,94, 0.6);
+    box-shadow: 0 0 0 0 rgba(207,94,94, 0.6);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(207,94,94, 0);
+      box-shadow: 0 0 0 10px rgba(207,94,94, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(207,94,94, 0);
+      box-shadow: 0 0 0 0 rgba(207,94,94, 0);
+  }
+}
+.bleu
+{
+   color: #536eb7;
+}
+.vert
+{
+   color: #75cba8;
+}
+.rouge
+{
+   color: #ff6161;
+}
+.orange
+{   
+   color: #f2bf5f;
+}
+ .titre-carre-entretien
+{
+    font-size: 25px;
+    font-family: "Frutiger";
+    margin-bottom: 0.7rem;
+    line-height: 1.636;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 20px 0 20px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+.text-carre-entretien
+{
+    font-family: "Frutiger";
+    padding: 0 20px 0 20px;
+    margin: .5rem 0;
+    font-size: .85rem;
+    line-height: 1.3846;
+    color: #000;
+}
+/*Fin bande offre entretien*/
+
+/*Bande video youtube*/
+.cercle
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.num-cercle
+{
+    font-family: "Frutiger";
+    color: white;
+    margin-left: 14px;
+    margin-top: 0px;
+    position: absolute;
+    font-size: 26px;
+}
+.img-pt-1
+{
+    width: 90%;
+    margin-left: 14px;
+    margin-top: 15px;
+}
+.img-pt-2
+{
+    width: 71%;
+    margin-left: 23px;
+    margin-top: 22px;
+}
+.img-pt-3
+{
+    width: 79%;
+    margin-left: 15px;
+}
+.img-pt-4
+{
+    width: 153%;
+    margin-left: -39px;
+    margin-top: -37px;
+}
+/*Fin video youtube*/
+/* Fin Index */
+.bc-blue
+{
+    background-color: #5e8fcf;
+}
+.bc-yellow
+{
+    background-color: #fde498;
+}
+.bc-red
+{
+    background-color: #d46f6f;
+}
+.bc-green
+{
+    background-color: #547f4e;
+}
+.bc-brown
+{
+    background-color: #8e7762;
+}
+.pulse-green
+{
+    animation: pulse-g 1.5s infinite;
+    background-color: #426036bd;
+    box-shadow: 0 0 0 #3d5c32c2;
+}
+@-webkit-keyframes pulse-g {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(63,117,80, 0.6);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(63,117,80, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(63,117,80, 0);
+  }
+}
+@keyframes pulse-g {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(63,117,80, 0.6);
+    box-shadow: 0 0 0 0 rgba(63,117,80, 0.6);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(63,117,80, 0);
+      box-shadow: 0 0 0 10px rgba(63,117,80, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(63,117,80, 0);
+      box-shadow: 0 0 0 0 rgba(63,117,80, 0);
+  }
+}
+.pulse-red
+{
+    animation: pulse-r 1.5s infinite;
+    background-color: #cf5e5ed4;
+    box-shadow: 0 0 0 #cf5e5e80;
+}
+@-webkit-keyframes pulse-r {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(207,94,94, 0.6);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(207,94,94, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(207,94,94, 0);
+  }
+}
+@keyframes pulse-r {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(207,94,94, 0.6);
+    box-shadow: 0 0 0 0 rgba(207,94,94, 0.6);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(207,94,94, 0);
+      box-shadow: 0 0 0 10px rgba(207,94,94, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(207,94,94, 0);
+      box-shadow: 0 0 0 0 rgba(207,94,94, 0);
+  }
+}
+.pulse-yellow
+{
+    animation: pulse-y 1.5s infinite;
+    background-color: #fde498;;
+    box-shadow: 0 0 0 #cf5e5e80;
+}
+@-webkit-keyframes pulse-y {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(201,177,102, 0.6);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(201,177,102, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(201,177,102, 0);
+  }
+}
+@keyframes pulse-y {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(201,177,102, 0.6);
+    box-shadow: 0 0 0 0 rgba(201,177,102, 0.6);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(201,177,102, 0);
+      box-shadow: 0 0 0 10px rgba(201,177,102, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(201,177,102, 0);
+      box-shadow: 0 0 0 0 rgba(201,177,102, 0);
+  }
+}
+.pulse-brown
+{
+    animation: pulse-br 1.5s infinite;
+    background-color: #8e7762cc;
+}
+@-webkit-keyframes pulse-br {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(142,119,98, 0.6);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(142,119,98, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(142,119,98, 0);
+  }
+}
+@keyframes pulse-br {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(142,119,98, 0.6);
+    box-shadow: 0 0 0 0 rgba(142,119,98, 0.6);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(142,119,98, 0);
+      box-shadow: 0 0 0 10px rgba(142,119,98, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(142,119,98, 0);
+      box-shadow: 0 0 0 0 rgba(142,119,98, 0);
+  }
+}
+.pulse-blue
+{
+    animation: pulse-b 1.5s infinite;
+    background-color: rgba(94,143,207,.8);
+    box-shadow: 0 0 0 #3d5c32c2;
+}
+@-webkit-keyframes pulse-b {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(102,145,203, 0.6);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(102,145,203, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(102,145,203, 0);
+  }
+}
+@keyframes pulse-b {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(102,145,203, 0.6);
+    box-shadow: 0 0 0 0 rgba(102,145,203, 0.6);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(102,145,203, 0);
+      box-shadow: 0 0 0 10px rgba(102,145,203, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(102,145,203, 0);
+      box-shadow: 0 0 0 0 rgba(102,145,203, 0);
+  }
+}
+@media screen and (max-width: 450px) {
+  .titre-baniere-entretien{
+    font-size:35px;
+  }
+  .titre-baniere{
+    font-size:35px;
+  }
+  .titre-offre-1
+  {
+    font-size: 35px;
+  }
+}

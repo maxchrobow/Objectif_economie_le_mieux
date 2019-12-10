@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block seo %}
+<meta name="Description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:title" content="Objectif Économie | Service après vente ">
+<title>Objectif Économie | Service après vente </title>
+
+<link rel="canonique" href="https://www.objectifeconomie.fr/" />
+<link type="text/css" href="{% static 'vitrine/css/mentions_legales_pc.css' %}" media="only screen and (min-width: 992px)" rel="stylesheet">
+<link type="text/css" href="{% static 'vitrine/css/mentions_legales_tel.css' %}" media="only screen and (max-width: 992px)" rel="stylesheet">
+{% endblock %}
+
+{% block link %}
+{% endblock %}
+{% block content %}
+<section>
+	<h1 class="titre-p-ml">Service après vente</h1>
+	<div class="div-ml">
+		<h2>Service après vente (SAV)</h2>
+		<p>Avec un objectif de 100% de clients satisfaits, Objectif Économie s’engage à vous accompagner dés l’achèvement de vos commandes et de vos installations, sur tout le territoire, grâce à des équipes de techniciens et d’ouvriers réactifs qui ont pour mission de vous apporter leurs professionnalisme, d’installer avec vous un climat de confiance et de vous garantir un service après-vente de qualité. Dans ce cadre là, nos équipes interviennent d’ailleurs sous 3 jours maximum.</p>
+	</div>
+	<a href="" class="pulse bouton-sav">Prendre rendez-vous</a>
+</section>
+{% endblock %}

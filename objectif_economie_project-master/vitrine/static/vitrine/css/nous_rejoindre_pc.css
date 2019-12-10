@@ -1,0 +1,241 @@
+@font-face
+{
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Thin.woff2');
+}
+@font-face
+{
+    font-family: "LucidaGrande";
+    src: url('../fonts/LucidaGrande.woff2');
+}
+#video-fond {
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+}
+.image-bandeau-principal
+{
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+}
+.titre-baniere
+{
+    text-align: left;
+    font-family: "Gilroy-Medium";
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 250px;
+    margin-left: 50px;
+    font-size: 53px;
+    max-width: 814px;
+    text-transform: uppercase;
+    line-height: initial;
+    margin-bottom: 69px;
+    font-weight: bold;
+}
+.text-baniere
+{
+	text-shadow: 0px 0px 2px #000000;
+    font-family: "Gilroy-Medium";
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 446px;
+    max-width: 532px;
+    font-size: 17px;
+    margin-left: 50px;
+    color: white;
+}
+.titre_principal
+{
+	font-family: Gilroy,sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 55px;
+    color: #8bd2db;
+}
+.trait
+{
+    width: 290px;
+    border-radius: 50px;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #caf8ff;
+}
+.tableau
+{
+    margin-bottom: 125px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+}
+.table
+{
+	width: 100%;
+    border-collapse: collapse;
+    border-color: #ccc;
+}
+.carrebleu
+{
+	width: 100px;
+    height: 50px;
+    background-color: #52adaa59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-rendering: auto;
+    color: #333;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: hidden;
+    border-color: initial;
+    border-image: initial;
+    font-weight: bold;
+}
+thead th, thead td
+{
+
+	padding: 8px;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #f6f6f6;
+    color: #666;
+    font-size: 14px;
+    border: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+    text-align: left;
+    font-family: "Roboto";
+}
+thead p
+{
+	padding: 5px;
+}
+tbody th, tbody td
+{
+	font-size: 13px;
+    line-height: 16px;
+    border-bottom: 1px solid #eee;
+    padding: 8px;
+    font-family: "LucidaGrande";
+    color: #333;
+    text-align: left;
+}
+tbody a
+{
+	color: #447e9b;
+    text-decoration: none;
+}
+.input-format-file
+{
+	padding: 5px;
+	border: none;
+    border-style: none;
+    box-shadow: 0 1px 1px 0px rgba(0,0,0,0.2), 0 0px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    height: 22px;
+    width: 250px;
+    border-radius: 2px;
+}
+.input-format-simple
+{
+    border: none;
+    border-style: none;
+    box-shadow: 0 1px 1px 0px rgba(0,0,0,0.2), 0 0px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    height: 30px;
+    border-radius: 2px;
+    width: 150px;
+    padding-left: 15px;
+}
+.input-final
+{
+    border: none;
+    border-style: none;
+    box-shadow: 0 1px 1px 0px rgba(0,0,0,0.2), 0 0px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    height: 30px;
+    border-radius: 2px;
+    width: 100px;
+    background-color: #3b5050;
+    color: white;
+}
+.display_none
+{
+	display: none!important;
+}
+.display_table_row
+{
+	display: table-row!important;
+}
+.display_block
+{
+    display: block!important;
+}
+@media (max-width: 700px){
+.table thead {
+display: none;
+}
+.table tr{
+display: block;
+margin-bottom: 40px;
+}
+.table td {
+display: block;
+text-align: right;
+}
+.table td:before {
+content: attr(data-label);
+float: left;
+font-weight: bold;
+}
+.titre-baniere
+{
+    text-align: left;
+    font-family: "Gilroy-Medium";
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 180px;
+    margin-left: 10px;
+    font-size: 27px;
+    max-width: 814px;
+    text-transform: uppercase;
+    line-height: initial;
+    margin-bottom: 69px;
+    font-weight: bold;
+}
+.image-bandeau-principal
+{
+    height: 500px;
+}
+.text-baniere
+{
+
+    margin-top: 306px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.tel_mail
+{
+    text-align: left!important;
+}
+}

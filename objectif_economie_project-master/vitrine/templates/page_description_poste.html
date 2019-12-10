@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block seo %}
+<meta name="Description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:title" content="Objectif Économie | Description du poste | {{poste.titre_du_poste}}">
+<title>Objectif Économie | Description du poste | {{poste.titre_du_poste}}</title>
+{% endblock %}
+
+{% block link %}
+<link rel="canonique" href="https://www.objectifeconomie.fr/" />
+{% endblock %}
+{% block content %}
+
+<section style="padding: 50px;">
+	<a href="{% url 'nous_rejoindre' %}" style="text-decoration: none;
+    color: #8bd2db;">&#8592;	retour</a>
+	<h1 style="text-align: left;">{{poste.titre_du_poste}}</h1>
+	<p style="text-align: left;
+    letter-spacing: 1.2px;
+    line-height: 30px;">{{poste.description_poste|linebreaks}}</p>
+</section>
+
+{% endblock %}

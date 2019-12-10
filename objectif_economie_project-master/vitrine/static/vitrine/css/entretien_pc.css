@@ -1,0 +1,419 @@
+@font-face
+{
+    font-family: "Jaldi";
+    src: url('../fonts/Jaldi-Regular.woff2');
+}
+/* Bande princiaple */
+.bande-principal-entretien
+{
+    display: flex;
+}
+.ban_entretien_chaudiere
+{
+    z-index: -1;
+    width: 100%;
+    height: 350px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.7;
+}
+.div-bande-principal-entretien
+ {
+    background-color: rgba(0, 0, 0, 1);
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+.div-bande-principal-entretien{
+    padding: 0;
+    margin: 0;
+    background: url(../img/yannick6.jpg) center no-repeat;
+    background-size: cover;
+    width: 70%;
+}
+.filtre-black
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 620px;
+    background: black;
+    opacity: 0.2;
+}
+.titre-bande-principal
+{
+	font: bold 2.5rem/1 'Jaldi',sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+	color: white;
+    float: left;
+    width: 550px;
+    z-index: 1;
+    margin-left: 50px;
+}
+.text-bande-principal
+{
+	font: normal .875rem/1.5 'Jaldi',sans-serif;
+	font-size: 1.5rem;
+    line-height: 1.18;
+    max-width: 45rem;
+    color: white;
+	width: 550px;
+    margin-top: -10px;
+    z-index: 1;
+    margin-left: 50px;
+}
+.titre-baniere
+{
+	font-weight: bold;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-align: center;
+    color: #343434;
+    margin-top: 25px;
+    margin-bottom: -15px;
+}
+.span-text-baniere
+{
+    color: #009de9;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.div-baniere
+{
+    margin-top: 170px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 230px;
+    width: 530px;
+    box-shadow: 0 10px 35px 0 rgba(0,0,0,0.18);
+    background-color: white;
+}
+.link-baniere
+{
+	color: #fff;
+	background-color: #009de9;
+    font-weight: 700;
+    min-height: 60px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 2px 30px;
+    margin-top: 45px;
+}
+.link-baniere:hover
+{
+	background-color: #0f5f87;
+	transition: 1s;
+}
+.div-bande-principal-right
+{
+	width: 30%;
+}
+.div-bande-principal-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: #cccccc;
+    box-shadow: 0 -3px 24px 4px rgba(0,0,0,0.07);
+}
+.titre-bp
+{
+    margin-top: 100px;
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+    color: #009de9;
+}
+.text-bp
+{
+    width: 71%	;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 40px;
+}
+/* Fin Bande principale */
+
+/* Bande br */
+.bande-bleur-br
+{
+	width: 2px;
+    background-color: #009de9;
+    height: 200px;
+    height: 100%;
+}
+.bande-br
+{
+    height: 700px;
+}
+.div-br
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    height: 500px;
+    padding-top: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titre-br
+{
+	font: bold 2.5rem/1 'Jaldi',sans-serif;
+	letter-spacing: 1px;
+    color: #009de9;
+    margin-top: -50px;
+    margin-bottom: 80px;
+    font-size: 3.5rem;
+}
+.block-br
+{
+	display: flex;
+    max-width: 1200px;
+}
+.sub-block-br
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.333%;
+    height: 390px;
+}
+.sub-block-br:hover
+{
+	transition: 2s;
+	background-color: #009de91f
+}
+.sub-block-br-1
+{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-block-br-2
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.valider-bleue
+{
+	width: 15%;
+	margin-left: 43%;
+}
+.titre-block-br
+{
+    width: 190px;
+	text-align: center;
+	color: #ffb300;
+}
+.text-block-br
+{
+    width: 250px;
+	text-align: center;
+}
+/* Fin bande br */
+
+/* Bande block 4d */
+.flip-box-inner {
+	position: relative;
+  width: 280px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.block-4d:hover .flip-box-inner {
+	transform: rotateY(180deg);
+}
+.flip-box-back,
+.flip-box-front {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 1px;
+}
+.flip-box-front {
+	color: #000;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+.flip-box-back {
+	background-color: #fff;
+	color: #000;
+	transform: rotateY(180deg);
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.position-block-4d
+{
+	margin-top: -525px;
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+} 
+.div-4d
+{
+	display: flex;
+}
+.block-4d
+{
+    padding: 10px;
+    width: 250px;
+    height: 200px;
+    perspective: 4000px;
+    margin-right: 13px;
+    margin-left: 13px;
+    margin-bottom: -30px;
+}
+.titre-4d
+{
+    font-family: "futura";
+    letter-spacing: 1px;
+    font-size: 35px;
+    margin-top: -20px;
+}
+.text-4d
+{
+    padding: 10px;
+    font-size: 18px;
+}
+.carre-4d
+{
+	width: 85px;
+    height: 4px;
+    background-color: red;
+    border-radius: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}
+.carre-4d-1
+{
+	background-color:#75cba8 ;
+}
+.carre-4d-2
+{
+	background-color: #536eb7;
+}
+.carre-4d-3
+{
+	background-color:#ff6161 ;
+}
+.carre-4d-4
+{
+	background-color: #f2bf5f;
+}
+.titre-4d-1
+{
+	color:#75cba8;
+}
+.titre-4d-2
+{
+	color:#536eb7;
+}
+.titre-4d-3
+{
+	color:#ff6161;
+}
+.titre-4d-4
+{
+	color:#f2bf5f;
+}
+.text-4d-1
+{
+	color:#75cba8;
+}
+.text-4d-2
+{
+	color:#536eb7;
+}
+.text-4d-3
+{
+	color:#ff6161;
+}
+.text-4d-4
+{
+	color:#f2bf5f;
+}
+.titre-right-4d
+{	
+	font: bold 2.5rem/1 'Jaldi',sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 160px;
+    margin-left: 80px;
+    z-index: 5;
+    position: relative;
+}
+.text-right-4d
+{
+    color: white;
+    font: normal .875rem/1.5 'Jaldi',sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.18;
+    margin-left: 80px;
+    z-index: 5;
+    position: relative;
+    margin-top: -30px;
+}
+.link-4d
+{
+	color: #fff;
+    background-color: #009de9;
+    font-weight: 700;
+    min-height: 60px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 2px 30px;
+    margin-top: 45px;
+    width: 420px;
+}
+.link-4d:hover
+{
+	background-color: #0f5f87;
+	transition: 1s;
+}
+.text-link-4d
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 1125px)/*MD*/
+{
+	.text-right-4d
+	{
+		width: 300px;
+		margin-left: 120px;
+	}
+	.titre-right-4d
+	{
+		margin-top: 110px;
+		margin-left: 120px;
+	}
+}
+/* Fin block 4d */

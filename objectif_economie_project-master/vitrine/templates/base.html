@@ -1,0 +1,52 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta name="Content-Type" content="UTF-8">
+	<meta name="Content-Language" content="fr">
+	<meta property="og:site_name" content="Objectif Économie">
+	<meta property="og:url" content="https://www.objectifeconomie.fr">
+	<meta property="og:type" content="website">
+	<!-- <meta property="og:image" content="https://www.objectifeconomie.fr/static/vitrine/img/index_fond.png"> -->
+
+	<meta name="format-detection" content="telephone=no">
+
+	{% block seo %} {% endblock %}
+
+	<link rel="shortcut icon" type="img/png" href="{% static 'vitrine/img/logo.png' %}">
+	<link type="text/css" href="{% static 'vitrine/css/base_pc.css' %}" media="only screen and (min-width: 992px)" rel="stylesheet">
+	<link type="text/css" href="{% static 'vitrine/css/base_tel.css' %}" media="only screen and (max-width: 991px)" rel="stylesheet">
+
+	{% block link %} {% endblock %}
+</head>
+
+<body style="margin: 0;" >
+	{% include 'annexe/navbar.html' %}
+	{% include 'annexe/popup-discutons.html' %}
+	<div id="fond">
+		{% if messages %}
+		<ul class="messagelist">
+			{% for message in messages %}
+				{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+					<div style="background-color: #ff00009e;"class="alert {{ message.tags }} alert-dismissible" role="alert">
+					{{ message }}
+					</div>
+				{% endif %}
+				{% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+					<div class="alert {{ message.tags }} alert-dismissible" role="alert">
+						{{ message }}
+					</div>
+				{% endif %}
+			{% endfor %}
+		</ul>
+		{% endif %}
+		{% block content %} {% endblock %}
+		
+	</div>
+	{% include 'annexe/footer.html' %}
+	{% block shemaorg %} {% endblock %}
+	<script src="{% static 'vitrine/js/modernizr.js' %}"></script>
+	<noscript>Your browser does not support JavaScript!</noscript>
+
+</body>
+</html>

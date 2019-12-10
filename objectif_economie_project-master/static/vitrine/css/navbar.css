@@ -1,0 +1,256 @@
+/* NAVBAR */
+.navbar
+{
+    margin-bottom: 60px;
+}
+.header
+{
+    box-shadow: 0px 2px 13px -8px rgba(0,0,0,0.2);
+    background-color: #fff;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transition: top 1s;
+    display: flex;
+}
+.header a
+{
+    text-decoration:none;
+}
+.image_logo
+{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+.item-navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875em;
+    width: 210px;
+}
+.item-navbar:hover
+{
+    background-color: #f2f2f2;
+    -webkit-transition: all 0.5s ease-out; /*compatibilité chrome*/
+    -moz-transition: all 0.5s ease-out; /*compatibilité firefox*/
+    -o-transition: all 0.5s ease-out; /*compatibilité opéra*/
+    transition: all 0.5s ease-out; /* Autre navigateur */
+}
+.item-navbar:hover .dropbtn
+{
+    background-color: transparent;
+    -webkit-transition: all 0.5s ease-out; /*compatibilité chrome*/
+    -moz-transition: all 0.5s ease-out; /*compatibilité firefox*/
+    -o-transition: all 0.5s ease-out; /*compatibilité opéra*/
+    transition: all 0.5s ease-out; /* Autre navigateur */
+}
+
+.item-navbar2
+{
+    color: black;
+    padding: 20px 25px 19px 25px;
+}
+.item-navbar3
+{
+    color: black;
+    padding: 20px 45px 19px 45px;
+}
+.item-navbar3::before
+{
+    margin-right: 5px;
+    content: "✉";
+}
+
+
+.dropbtn {
+    z-index: 2;
+    background-color: transparent;
+    color: black;
+    padding: 23px 73px 22px 73px;
+    font-size: 0.920em;
+    border: white;
+    cursor: pointer;
+    outline-style:none;
+    font-weight: 700;
+}
+.navbar-1
+{
+    width: 81%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar-2
+{
+    display: flex;
+    width: 19%;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875em;
+    min-width: 283px;
+}
+.flechedown
+{
+    position: absolute;
+    width: 25px;
+    margin-left: 45px;
+    z-index: 1;
+}
+.navbar-2 a
+{
+    padding: 20px 68px 20px 68px;
+    color: white;
+}
+.icone-compte
+{
+    width: 15px;
+    margin-right: 10px;
+}
+/* DropDown */
+.nav_sub_menu
+{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 4;
+    background-color: #fff;
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.nav_sub_menu:after
+{
+    height: 1px;
+    top: 0;
+    left: 50%;
+    width: 1140px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.item-navbar-dropdown:hover .dropdown-content
+{
+    display: block;
+}
+.div_sub_menu
+{
+    display: flex;
+}
+.part_sub_menu1
+{
+    width: 36%;
+    background-color: #f2f2f2;
+}
+.part_sub_menu2_a
+{
+    display: none;
+}
+
+.part_sub_menu2_b
+{
+    display: none;
+}
+.part_sub_menu2
+{
+    width: 64%;
+    display: none;
+}
+.show
+{
+    display: flex;
+}
+.hidden
+{
+    display: none;
+}
+.sub_menu_content
+{
+    float: right;
+}
+.nav_sub_menu_titre
+{
+    padding: 10px 10px 0 10px;
+    display: block;
+}
+.nav_sub_menu_list_item
+{
+    overflow: hidden;
+    width: 270px;
+    padding: 4px;
+}
+.nav_sub_menu_list_link
+{
+    color: #3d3d3d;
+}
+.dropdown
+{
+    margin-right: -20px;
+}
+.div_sub_menu_content
+{
+    padding: 5px;
+    margin-left: 50px;
+    width: 300px;
+}
+.div_sub_menu_content:hover
+{
+    background-color: #85c58c;
+}
+.pc-particulier
+{
+    width: 360px;
+    margin-top: 30px;
+}
+.titre_sub_menu_a
+{
+    padding: 10px 10px 0 20px;
+}
+.item_sub_menu_a
+{
+    padding: 4px;
+    overflow: hidden;
+}
+.list_sub_menu_a a
+{
+    text-decoration: none;
+    color: #85c58c;
+    transition: 0.5s;
+}
+.list_sub_menu_a a:hover
+{
+    transition: 0.5s;
+    color: #557157;
+    text-decoration:underline;
+    margin-left: 5px;
+
+}
+/* Fin DropDown */
+#blink
+{
+    animation-name: blinky;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;  
+}
+@keyframes blinky {
+    0% {background-color:#557157;}
+    5%{background-color: #333333;}
+    95%{background-color: #333333;}
+    100% {background-color:#557157;}
+}
+/* FIN NAVBAR */

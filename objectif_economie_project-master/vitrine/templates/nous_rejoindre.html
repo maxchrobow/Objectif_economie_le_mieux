@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block seo %}
+<meta name="Description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:title" content="Objectif Économie | Nous rejoindre ">
+<title>Objectif Économie | Nous rejoindre </title>
+
+<link rel="canonique" href="https://www.objectifeconomie.fr/" />
+<link type="text/css" href="{% static 'vitrine/css/nous_rejoindre_pc.css' %}"rel="stylesheet">
+
+{% endblock %}
+
+{% block link %}
+{% endblock %}
+{% block content %}
+<section>
+	<div class="block-baniere" id="video-fond">
+		<picture>
+			<source type="image/webp" srcset="{% static 'vitrine/img/webp/bandeau_nous_rejoindre.webp' %}">
+		    <source type="image/png" srcset="{% static 'vitrine/img/bandeau_nous_rejoindre.png' %}">
+			<img alt="bandeau_nous_rejoindre"src="{% static 'vitrine/img/bandeau_nous_rejoindre.png' %}" class="image-bandeau-principal">
+		</picture>
+		<div class="titre-baniere">
+			<span style="background-color: #b9b9c8; font-weight: 800;">Vous souhaitez nous rejoindre ?</span>
+		</div>
+		<div class="text-baniere">
+			<span >Postulez pour les emplois qui vous interessent <br>et recevez une réponse en moins de 2 jours</span>
+		</div>
+	</div>
+</section>
+<section>
+	<h1 class="titre_principal">Nos offres d'emplois</h1>
+	<div class="trait"></div>
+
+	<div class="tableau">
+		<table class="table">
+			<thead>
+				<tr>
+					<th style="width: 420px;">
+						<div>
+							<p>Titre du poste</p>
+						</div>
+					</th>
+					<th style="width: 220px;">
+						<div>
+							<p>Lieu</p>
+						</div>
+					</th>
+					<th style="width: 200px;">
+						<div>
+							<p>Date de publication</p>
+						</div>
+					</th>
+					<th style="width: 140px;">
+						<div>
+							Action
+						</div>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for poste in liste_poste %}
+				<tr>
+					<th data-label="Poste"><a href="{% url 'page_description_poste' poste.id %}">{{poste.titre_du_poste}}</a></th>
+					<td data-label="Lieu">{{poste.lieu_du_poste}}</td>
+					<td data-label="Date">{{poste.date_de_publication}}</td>
+					<th data-label="Submit">
+						<button class="carrebleu" onclick="display_line({{ forloop.counter0 }})">
+							Je postule !
+						</button>
+					</th>
+				</tr>
+				<tr class="ligne_post display_none">
+					<form method='POST' enctype="multipart/form-data">{% csrf_token %}
+						<input type="hidden" name="titre_du_poste" value="{{poste.titre_du_poste}}">
+						<th>
+							{{ formulaire_cv.as_p }}
+						</th>
+						<td class="tel_mail">
+							<input type="text" name="telephone" placeholder="Numéro de téléphone" class="input-format-simple" required >
+						</td>
+						<td class="tel_mail">
+							<input type="email" name="email" id ="email" placeholder="Email" class="input-format-simple" required>
+						</td>
+						<th>
+							<input type="submit" class="input-final" name="submit_poste" value="Confirmer">
+						</th>
+					</form>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</section>
+
+<script type="text/javascript">
+
+function display_line(n)
+{
+	var x = document.getElementsByClassName("ligne_post");
+	var c = x.length;
+	var i;
+	if(window.innerWidth>700)
+	{
+		if (x[n].classList == "ligne_post display_table_row")
+		{
+			for(i = 0; i < c; i++) 
+			{
+				x[i].classList = "ligne_post display_none";
+			}
+		}
+		else 
+		{
+			for(i = 0; i < c; i++) 
+			{
+				x[i].classList = "ligne_post display_none";
+			}
+
+			x[n].classList = "ligne_post display_table_row";
+		}
+	}
+	else
+	{
+		if (x[n].classList == "ligne_post display_block")
+		{
+			for(i = 0; i < c; i++) 
+			{
+				x[i].classList = "ligne_post display_none";
+			}
+		}
+		else 
+		{
+			for(i = 0; i < c; i++) 
+			{
+				x[i].classList = "ligne_post display_none";
+			}
+
+			x[n].classList = "ligne_post display_block";
+		}
+	}
+}
+</script>
+{% endblock %}
+

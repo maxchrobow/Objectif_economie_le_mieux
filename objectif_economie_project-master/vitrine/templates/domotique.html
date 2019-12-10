@@ -1,0 +1,377 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block seo %}
+<meta name="Description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:title" content="Objectif Économie | Domotique ">
+<title>Objectif Économie | Domotique </title>
+
+<link rel="canonique" href="https://www.objectifeconomie.fr/" />
+<link type="text/css" href="{% static 'vitrine/css/accueil_pc.css' %}" media="only screen and (min-width: 992px)" rel="stylesheet">
+<link type="text/css" href="{% static 'vitrine/css/accueil_tel.css' %}" media="only screen and (max-width: 992px)" rel="stylesheet">
+{% endblock %}
+
+{% block link %}
+{% endblock %}
+
+{% block content %}
+<section>
+	<div class="block-baniere block-baniere-domotique" id="video-fond">
+		<picture>
+			<source type="image/webp" srcset="{% static 'vitrine/img/webp/bandeau_gest_domotique.webp' %}">
+		    <source type="image/png" srcset="{% static 'vitrine/img/bandeau_gest_domotique.png' %}">
+			<img alt="bandeau_gest_domotique"src="{% static 'vitrine/img/bandeau_gest_domotique.png' %}" class="image-bandeau-principal CSSPC">
+		</picture>
+		<div class="titre-baniere CSSPC" style="margin-top: 150px;width: 914px;">
+			<span style="background-color: #fde49896; font-weight: 800;">Construisez la maison de demain<br>grâce à notre système<br>de domotique perfectionné !</span>
+		</div>
+		<div class="titre-baniere CSSTEL" style="margin-top: 55px;">
+			<span style="background-color: #fde49896; font-weight: 800;">Construisez la maison de demain<br>grâce à notre système<br>de domotique perfectionné !</span>
+		</div>
+		<div class="text-baniere">
+			<span style="    margin-top: 84px;">La solution My Light System est compatible avec tout type d’installation, notamment les ballons thermodynamiques et les pompes à chaleur. Vous pouvez commander et contrôler à distance le fonctionnement de tous vos appareils connectés à l’aide d’une application vous permettant ainsi de faire des économies.</span>
+		</div>
+
+		<div class="form-rdv-baniere CSSPC-flex" style="margin-top: -230px;">
+			<div role="button" id="" onmouseover="contentDropSelect()" class="div-1-form-rdv">
+				<p class="text-select" id="text-devis">Je souhaite obtenir un devis</p>
+				<p class="hidden" id="text-eligibilité">Je souhaite tester mon éligibilité</p>
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/flechedown.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/flechedown.png' %}">
+					<img class="flechedown-select ml1" alt="flechedown" id="flechedown-select" src="{% static 'vitrine/img/flechedown.png' %}">
+				</picture>
+
+				<div id="hidden-drop-select" class="hidden-drop-select">
+					<div role="button" class="hidden" id="div-devis-select" onclick="changeDevis()">
+						<p class="titre-select"><span style="font-weight: 500;">Je souhaite obtenir un devis</p>
+					</div>
+					<div role="button" class="hidden" id="div-eligibilite-select" onclick="changeEligibilite()">
+						<p class="titre-select"><span style="font-weight: 500;">Je souhaite tester mon éligibilité</p>
+					</div>
+				</div>
+			</div>
+			<div class="div-2-form-rdv div-2-form-rdv-jaune">
+				<a href="{% url 'index' %}" class="link-div2-form">
+					<p class="t1-div2-form" id="t1">Prendre contact</p>
+					<p class="hidden" id="t2">Tester dès maintenant !</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="CSSPC-flex">
+	<div style="background-color: white;
+    height: 80px;    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;">
+		<div  id="trans" style="background-color: white;
+	    height: 80px;
+	    display: flex;
+	    justify-content: space-around;opacity: 0.6;">
+		 	<div>
+		 		<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_daikin.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/logo_daikin.png' %}">
+					<img src="{% static 'vitrine/img/logo_daikin.png' %}" alt="logo_daikin" style="filter: grayscale(1);margin-top: 15px;">
+				</picture>
+			</div>
+			<div>
+		 		<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_atlantic.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/logo_atlantic.png' %}">
+					<img src="{% static 'vitrine/img/logo_atlantic.png' %}" alt="logo_atlantic" style="filter: grayscale(1);margin-top: 15px;">
+				</picture>
+			</div>
+			<div>
+		 		<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_dietrich.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/logo_dietrich.png' %}">
+					<img src="{% static 'vitrine/img/logo_dietrich.png' %}" alt="logo_dietrich" style="filter: grayscale(1);margin-top: 11px;">
+				</picture>
+			</div>
+			<div>
+		 		<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_chaffoteaux.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/logo_chaffoteaux.png' %}">
+					<img src="{% static 'vitrine/img/logo_chaffoteaux.png' %}" alt="logo_chaffoteaux" style="filter: grayscale(1);margin-top: 11px;">
+				</picture>
+			</div>
+			<div>
+		 		<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_thermor.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/logo_thermor.png' %}">
+					<img src="{% static 'vitrine/img/logo_thermor.png' %}" alt="logo_thermor" style="filter: grayscale(1);margin-top: 15px;">
+				</picture>
+			</div>
+		</div>
+		<div id="transtext" class="transtext" style="color: #fde49896;"><h2>Pour nous, vous fournir le meilleur équiment est le plus important.</h2></div>
+	</div>
+</section>
+
+<section id="block3">
+	<h2 class="titre-offre-1" style="color:#fde498;">Notre selection des meilleures pompes à chaleur</h2>
+	<div id="block3_list">
+		<div class="block-offre">
+			<div class="div-offre">
+				<div style="height: 50px;">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_atlantic.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/logo_atlantic.png' %}">
+						<img alt="logo_atlantic" src="{% static 'vitrine/img/logo_atlantic.png' %}" style="width: 130px;margin-top: 2px;">
+					</picture>
+				</div>
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/p-c_excellia-alfea.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/p-c_excellia-alfea.png' %}">
+					<img class="image-offre" style="width: 100%;"alt="p-c_excellia-alfea" src="{% static 'vitrine/img/p-c_excellia-alfea.png' %}">
+				</picture>
+				<h2 class="titre-offre">Atlantic pompes à chaleur air/eau Alféa Excellia A.I.</h2>
+				<p class="text-offre">Produit certifié Heat Pump Keymark.<br><br>Développement et fabrication française du module hydraulique.</p>
+			</div>
+			<a href="" class="link-offre" style="background: #fde498;">
+				<div>
+					<p>En savoir plus</p>
+				</div>
+			</a>
+		</div>
+		<div class="block-offre">
+			<div class="div-offre">
+				<div style="height: 50px;">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_dietrich.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/logo_dietrich.png' %}">
+						<img alt="logo_dietrich" src="{% static 'vitrine/img/logo_dietrich.png' %}" style="width: 130px;">
+					</picture>
+				</div>
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/p-c_dietrich-alezio.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/p-c_dietrich-alezio.png' %}">
+					<img class="image-offre" style="width: 100%;" alt="p-c_dietrich-alezio" src="{% static 'vitrine/img/p-c_dietrich-alezio.png' %}">
+				</picture>
+				<h2 class="titre-offre">De Dietrich pompes à chaleur air/eau ALEZIO</h2>
+				<p class="text-offre">Jusqu'à 70% d'économies financières.<br><br>Climatisation en été et chauffage en hiver.</p>
+			</div>
+			<a href="" class="link-offre" style="background: #fde498;">
+				<div>
+					<p>En savoir plus</p>
+				</div>
+			</a>
+		</div>
+		<div class="block-offre">
+			<div class="div-offre">
+				<div style="height: 50px;">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_chaffoteaux.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/logo_chaffoteaux.png' %}">
+						<img alt="logo_chaffoteaux" src="{% static 'vitrine/img/logo_chaffoteaux.png' %}" style="width: 130px;margin-top: 5px;">
+					</picture>
+				</div>
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/p-c_chaffoteaux_arianext.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/p-c_chaffoteaux_arianext.png' %1}">
+					<img class="image-offre" style="width: 100%;"alt="p-c_chaffoteaux_arianext" src="{% static 'vitrine/img/p-c_chaffoteaux_arianext.png' %}">
+				</picture>
+				<h2 class="titre-offre">Chaffoteaux pompes à chaleur air/eau ARIANEXT</h2>
+				<p class="text-offre">Certifié NF PAC.<br><br>Le meilleur COP du marché : jusqu’à 5,25.</p>
+			</div>
+			<a href="" class="link-offre" style="background: #fde498;">
+				<div>
+					<p>En savoir plus</p>
+				</div>
+			</a>
+		</div>
+		<div class="block-offre">
+			<div class="div-offre">
+				<div style="height: 50px;">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_dietrich.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/logo_dietrich.png' %}">
+						<img alt="logo_dietrich" src="{% static 'vitrine/img/logo_dietrich.png' %}" style="width: 130px;">
+					</picture>
+				</div>
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/p-c_dietrich-stylish.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/p-c_dietrich-stylish.png' %}">
+					<img class="image-offre" style="width: 100%;"alt="p-c_dietrich-stylish" src="{% static 'vitrine/img/p-c_dietrich-stylish.png' %}">
+				</picture>
+				<h2 class="titre-offre">Dietrich pompes à chaleur air/air Stylish</h2>
+				<p class="text-offre">"Good design Award 2017"<br><br>Label énergétique  A+++ pour le chauffage et le rafraîchissement.</p>
+			</div>
+			<a href="" class="link-offre" style="background: #fde498;">
+				<div>
+					<p>En savoir plus</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section id="block4" class="bandeau-entretien-domotique">
+	<picture>
+		<source type="image/webp" srcset="{% static 'vitrine/img/webp/bandeau-entretien4.webp' %}">
+	    <source type="image/png" srcset="{% static 'vitrine/img/bandeau-entretien4.png' %}">
+		<img class="CSSPC image-chaud" alt="bandeau-entretien" src="{% static 'vitrine/img/bandeau-entretien4.png' %}">
+	</picture>
+	<div class="titre-baniere-entretien"><span style="
+    background-color: #fde49896;">L’entretiens de votre<br>domotique</span></div>
+	<div class="text-baniere-entretien"><span style="
+    background-color: #fde49896;">N’aura jamais été aussi simple et accessible grâce à notre plateforme ouverte 7j/7 24h/24</div>
+    <a href="" class="pulse bouton-baniere-entretien pulse-yellow">Souscrire à l'offre d'entretien</a>
+	<div class="CSSPC-flex block-carre-entretien">
+		<div class="div-carre-entretien">
+			<h3 class="titre-carre-entretien orange">26€/mois</h3>
+			<p class="text-carre-entretien">Une offre d'entretien tout compris sans engagement pour seulement 26€/mois !</p>
+		</div>
+		<div class="div-carre-entretien">
+			<h3 class="titre-carre-entretien bleu">SAV</h3>
+			<p class="text-carre-entretien">La garantie d'un remplacement sans frais de votre matériel défectueux !</p>
+		</div>
+		<div class="div-carre-entretien">
+			<h3 class="titre-carre-entretien vert">Remplacement</h3>
+			<p class="text-carre-entretien">La garantie d'un remplacement grace au service après vente unique et notre équipe à vos cotés 7J/7 !</p>
+		</div>
+		<div class="div-carre-entretien">
+			<h3 class="titre-carre-entretien rouge">Entretien</h3>
+			<p class="text-carre-entretien">Bénéficiez de l'entretien annuel obligatoire gratuitement !</p>
+		</div>
+	</div>
+</section>
+
+<section id="block5" class="CSSTEL">
+	<div class="block-carre-entretien">
+		<div class="div-carre-entretien">
+			<h3 class="titre-carre-entretien orange">26€/mois</h3>
+			<p class="text-carre-entretien">Une offre d'entretien tout compris sans engagement pour seulement 26€/mois !</p>
+		</div>
+		<div class="div-carre-entretien">
+			<h3 class="titre-carre-entretien bleu">SAV</h3>
+			<p class="text-carre-entretien">La garantie d'un remplacement sans frais de votre matériel défectueux !</p>
+		</div>
+		<div class="div-carre-entretien">
+			<h3 class="titre-carre-entretien vert">Remplacement</h3>
+			<p class="text-carre-entretien">La garantie d'un remplacement grace au service après vente unique et notre équipe à vos cotés 7J/7 !</p>
+		</div>
+		<div class="div-carre-entretien">
+			<h3 class="titre-carre-entretien rouge">Entretien</h3>
+			<p class="text-carre-entretien">Bénéficiez de l'entretien annuel obligatoire gratuitement !</p>
+		</div>
+	</div>
+</section>
+
+<section id="block6">
+	<h2 class="titre-pt" style="color:#fde498">Un problème technique ?</h2>
+	<div class="div-pt">
+		<div class="div-pt-block">
+			<div class="cercle-pt">
+				<div class="cercle bc-yellow"><span class="num-cercle">1</span></div>
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/calendrier_horloge.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/calendrier_horloge.png' %}">
+					<img class="img-pt-1" alt="calendrier_horloge" src="{% static 'vitrine/img/calendrier_horloge.png' %}">
+				</picture>
+			</div>
+			<h2 class="titre-cercle-pt">Prenez RDV</h2>
+			<p class="text-cercle-pt">Faire sa demande en ligne ou par téléphone.</p>
+		</div>
+		<div class="div-pt-block">
+			<div class="cercle-pt">
+				<div class="cercle bc-yellow"><span class="num-cercle">2</span></div>
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/telephone.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/telephone.png' %}">
+					<img class="img-pt-2" alt="telephone" src="{% static 'vitrine/img/telephone.png' %}">
+				</picture>
+			</div>
+			<h2 class="titre-cercle-pt">Nous vous confirmons votre rendez-vous</h2>
+			<p class="text-cercle-pt">Nous trouvons le technicien capable de résoudre votre problème.</p>
+		</div>
+		<div class="div-pt-block">
+			<div class="cercle-pt">
+				<div class="cercle bc-yellow"><span class="num-cercle">3</span></div>
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/maison.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/maison.png' %}">
+					<img class="img-pt-3" alt="maison" src="{% static 'vitrine/img/maison.png' %}">
+				</picture>
+			</div>
+			<h2 class="titre-cercle-pt" style="margin: 39px 0 15px;">Nous intervenons à domicile</h2>
+			<p class="text-cercle-pt">Ne vous préoccupez plus de rien, nos technicien interviennent chez vous.</p>
+		</div>
+		<div class="div-pt-block">
+			<div class="cercle-pt bc-yellow">
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/check.webp' %}">
+				    <source type="image/png" srcset="{% static 'vitrine/img/check.png' %}">
+					<img class="img-pt-4" alt="check" src="{% static 'vitrine/img/check.png' %}">
+				</picture>
+			</div>
+			<h2 class="titre-cercle-pt">FINI !</h2>
+			<p class="text-cercle-pt">Votre problème est résolu. Nous vous envoyons votre facture.</p>
+		</div>
+	</div>
+	<a href="" class="pulse bouton-baniere-pt pulse-yellow">Prendre contact</a>
+</section>
+
+
+
+
+<script>
+function functionchange(){
+	if(document.getElementById("ma_div_1").className == "offre-particulier")
+	{
+		document.getElementById("ma_div_1").className = "hidden";
+		document.getElementById("ma_div_2").className = "offre-professionnel";
+	}
+	else
+	{
+		document.getElementById("ma_div_2").className = "hidden";
+		document.getElementById("ma_div_1").className = "offre-particulier";
+	}
+};
+// afficher les options du select
+function contentDropSelect(){
+
+	document.getElementById("hidden-drop-select").className = "hidden-drop-select";
+
+	if(document.getElementById("text-devis").className == "text-select")
+	{
+		document.getElementById("div-devis-select").className = "hidden";
+		document.getElementById("div-eligibilite-select").className = "div-option-select";
+	}
+	else
+	{
+		document.getElementById("div-devis-select").className = "div-option-select";
+		document.getElementById("div-eligibilite-select").className = "hidden";
+	}
+}
+
+function changeDevis(){
+
+	document.getElementById("hidden-drop-select").className = 'hidden';
+
+	document.getElementById("text-devis").className = "text-select";
+	document.getElementById("text-eligibilité").className = "hidden";
+
+	document.getElementById("t1").className = "t1-div2-form";
+	document.getElementById("t2").className = "hidden";
+
+	document.getElementById("flechedown-select").className = "flechedown-select ml1";
+}
+
+function changeEligibilite(){
+
+	document.getElementById("hidden-drop-select").className = 'hidden';
+
+	document.getElementById("text-eligibilité").className = "text-select";
+	document.getElementById("text-devis").className = "hidden";
+	document.getElementById("t2").className = "t1-div2-form";
+	document.getElementById("t1").className = "hidden";
+
+	document.getElementById("flechedown-select").className = "flechedown-select ml2";
+
+}
+</script>
+{% endblock %}

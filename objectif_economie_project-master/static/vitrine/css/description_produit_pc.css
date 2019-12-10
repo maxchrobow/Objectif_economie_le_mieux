@@ -1,0 +1,18 @@
+.block1{
+	display:flex;
+}
+.block1-left{
+	width:30%;
+}
+#block1-left-titre{
+	text-align: center;
+}
+.block1-right{
+	width:70%;
+	padding:15px;
+	height:700px;
+	overflow: scroll;
+}
+#block1-left-accroche{
+
+}

@@ -1,0 +1,314 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block seo %}
+<meta name="Description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:title" content="Objectif Économie | Contact ">
+<title>Objectif Économie | Contact </title>
+
+<link rel="canonique" href="https://www.objectifeconomie.fr/" />
+<link type="text/css" href="{% static 'vitrine/css/contact_pc.css' %}" media="only screen and (min-width: 992px)" rel="stylesheet">
+<link type="text/css" href="{% static 'vitrine/css/contact_tel.css' %}" media="only screen and (max-width: 992px)" rel="stylesheet">
+{% endblock %}
+
+{% block link %}
+{% endblock %}
+
+{% block content %}
+
+<section class="test"id="TEST">
+
+	<div style="display: flex;overflow: hidden;height: 100%;">
+		
+		<div id="step1" class="display-block">
+			<h1 class="titre-aide-contact">Objectif Économie vous accompagne dans toutes vos démarches</h1>
+			<div class="div-indication">
+				<span>
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-aide-contact-1.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-aide-contact-1.png' %}">
+						<img alt="aide" src="{% static 'vitrine/img/page_contact/icon-aide-contact-1.png' %}" class="icon-aide-contact">
+					</picture>
+				</span>Besoin d'aide ? Un professionel s'occupera de votre demande sous 24h.
+			</div>
+			<div class="flex-aide-contact-step1">
+
+				<button style="border-bottom: 4px solid #f2bf5f;color:#f2bf5f;" value="Assistance technique" name="sujet" class="bouton-sujet inactive" onclick="make_grey(0)">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-assistance-technique.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-assistance-technique.png' %}">
+						<img alt="assistance-technique" src="{% static 'vitrine/img/page_contact/icon-assistance-technique.png' %}" class="icon-sujet">
+					</picture>
+					Assistance technique
+				</button>
+
+				<button style="border-bottom: 4px solid #75cba8;color:#75cba8;"value="Service Client" name="sujet" class="bouton-sujet inactive" onclick="make_grey(1)">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-service-client.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-service-client.png' %}">
+						<img alt="service-client" src="{% static 'vitrine/img/page_contact/icon-service-client.png' %}" class="icon-sujet">
+					</picture>
+					Service Client
+				</button>
+
+				<button style="border-bottom: 4px solid #536eb7;color:#536eb7;"value="Demander un devis" name="sujet" class="bouton-sujet inactive" onclick="make_grey(2)">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-devis.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-devis.png' %}">
+						<img alt="devis" src="{% static 'vitrine/img/page_contact/icon-devis.png' %}" class="icon-sujet">
+					</picture>
+					Demander un devis
+				</button>
+
+				<button style="border-bottom: 4px solid #ff6161;color:#ff6161;"value="Parrainage" name="sujet" class="bouton-sujet inactive" onclick="make_grey(3)">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-parrainage.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-parrainage.png' %}">
+						<img alt="parrainage" src="{% static 'vitrine/img/page_contact/icon-parrainage.png' %}" class="icon-sujet">
+					</picture>
+					Parrainage
+				</button>
+
+				<button style="border-bottom: 4px solid #d4b496;color:#d4b496;"value="Presse" name="sujet" class="bouton-sujet inactive" onclick="make_grey(4)">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-presse.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-presse.png' %}">
+						<img alt="presse" src="{% static 'vitrine/img/page_contact/icon-presse.png' %}" class="icon-sujet">
+					</picture>
+					Presse
+				</button>
+
+			</div>
+		</div>
+		
+
+		<div class="step2 display-none">
+			<div style="max-width: 880px;margin-left: auto;margin-right: auto;">
+			<p style="width: 100px;cursor:pointer;width: 120px;cursor: pointer;border: 1px solid #f2bf5f;font-family: 'PlexLight';text-align: center;border-radius: 10px;color: #f2bf5f;font-size: 17px;font-weight: bold;" onclick="nextPrev(-1)">&#8592; 	Précédent</p>
+			</div>
+			<h2 class="step2-titre-equipement" style="color:#f2bf5f;">Assistance technique</h2>
+			<div class="div-indication">
+				<span>
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-aide-contact-1.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-aide-contact-1.png' %}">
+						<img alt="aide" src="{% static 'vitrine/img/page_contact/icon-aide-contact-1.png' %}" class="icon-aide-contact">
+					</picture>
+				</span>Besoin d'aide ? Un professionel s'occupera de votre demande sous 24h.
+			</div>
+			<div class="flex-aide-equipement-step2">
+				<button value="Pompe à chaleur" name="equipement" class="bouton-equipement inactive" onclick="make_grey()">Pompe à chaleur
+				</button>
+				<button value="Isolation" name="equipement" class="bouton-equipement inactive" onclick="make_grey()">Isolation
+				</button>
+				<button value="Domotique" name="equipement" class="bouton-equipement inactive" onclick="make_grey()">Domotique
+				</button>
+				<button value="Chaudiere" name="equipement" class="bouton-equipement inactive" onclick="make_grey()">
+				Chaudiere
+				</button>
+				<button value="Ballon thermodynamique" name="equipement" class="bouton-equipement inactive" onclick="make_grey()">
+				Ballon thermodynamique
+				</button>
+			</div>
+		</div>
+		<div class="step3 display-none">
+			{% for probleme in liste_probleme %}
+				{% if probleme.equipement == "Isolation" %}
+					<div class="flex-aide-equipement-step2">
+						<button value="Pompe à chaleur" name="equipement" class="bouton-equipement inactive" onclick="make_grey()">Pompe à chaleur
+						</button>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div> 
+
+		<div class="step2 display-none">
+			<div style="max-width: 880px;margin-left: auto;margin-right: auto;">
+				<p style="width: 100px;cursor:pointer;width: 120px;cursor: pointer;border: 1px solid #75cba8;font-family: 'PlexLight';text-align: center;border-radius: 10px;color: #75cba8;font-size: 17px;font-weight: bold;" onclick="nextPrev(-1)">&#8592; 	Précédent</p>
+			</div>
+			<h2 class="step2-titre-service" style="color:#75cba8;">Service Client</h2>
+			<div class="div-indication">
+				<span>
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-aide-contact-1.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-aide-contact-1.png' %}">
+						<img alt="aide" src="{% static 'vitrine/img/page_contact/icon-aide-contact-1.png' %}" class="icon-aide-contact">
+					</picture>
+				</span>Besoin d'aide ? Un professionel s'occupera de votre demande sous 24h.
+			</div>
+			<div class="flex-aide-service-step2">
+				<button value="Service après vente" name="service" class="bouton-service inactive" onclick="">Service après vente</button>
+				<button value="Service comptable" name="service" class="bouton-service inactive" onclick="">Service comptable</button>
+				<button value="Service téléprospecteur" name="service" class="bouton-service inactive" onclick="">Service téléprospecteur</button>
+				<button value="Service installateur" name="service" class="bouton-service inactive" onclick="">Service installateur</button>
+				<button value="autre" name="service" class="bouton-service inactive" onclick="">autre</button>
+			</div>
+		</div>
+		
+
+		<div id="section-devis" class="step2 display-none">
+			<div class="block-devis-g">
+				<h2 class="titre-form">Demandez un devis gratuit et sans engagement</h2>
+				<form method='POST' action='' class="form"> {% csrf_token %}
+					<div class="form-information-gen">
+						<h2 class="titre-in-form">Informations générales :</h2>
+						<div class="line-form">
+	            			<div class="control-group"  >
+						        <label class="control control-radio">
+						            M.
+						            <input type="radio" name="civilite" value="M." checked="checked" />
+						            <div class="control_indicator"></div>
+						        </label>
+						        <label class="control control-radio" style="margin-left: 20px;">
+						            Mme.
+						            <input type="radio" name="civilite" value="Mme." />
+						            <div class="control_indicator"></div>
+						        </label>
+	    					</div>
+						</div>
+						<div class="line-form">
+							<input type="text" name="nom" placeholder="Nom" class="input-format-simple" required >
+							<input type="text" name="prenom" placeholder="Prenom" class="input-format-simple input-droite" required >
+						</div>
+						<div class="line-form">
+							<div class="control-group">
+						        <label class="control control-radio">
+						            Proriétaire
+						            <input type="radio" name="titre" value="Propriétaire" checked="checked" />
+						            <div class="control_indicator"></div>
+						        </label>
+						        <label class="control control-radio" style="margin-left: 20px;">
+						            Locataire
+						            <input type="radio" name="titre" value="Locataire" />
+						            <div class="control_indicator"></div>
+						        </label>
+	    					</div>
+						</div>
+					</div>
+					<div class="form-information-perso">
+						<h2 class="titre-in-form">Informations personnelles :</h2>
+						<div class="line-form">
+							<input type="text" name="adresse" placeholder="Adresse" class="input-format-long" required >
+							<br><br>
+							<input type="text" name="complement_adresse" placeholder="Complément d'adresse" class="input-format-long">
+						</div>
+						<div class="line-form">
+							<input type="text" name="code_postal" placeholder="Code postal" class="input-format-simple" required >
+							<input type="text" name="ville" placeholder="Ville" class="input-format-simple input-droite" required >
+						</div>
+						<div class="line-form">
+							<input type="text" name="telephone" placeholder="Numéro de téléphone" class="input-format-simple" required >
+						</div>
+						<div class="line-form">
+							<input type="email" name="email" id ="email" placeholder="Email" class="input-format-long" required="1">
+							<br><br>
+							<input type="text" name="confirmation_mail" id="confemail" placeholder="Confirmation de l'adresse e-mail" class="input-format-long" onblur="confirmEmail()" required >
+						</div>
+						<div class="line-form">
+							<select name="sujet" class="input-format-simple" required>
+							    <option value="">Selectionnez le produit concerné</option>
+							    <option value="chaudière">Chaudière</option>
+							    <option value="isolation">Isolation</option>
+							    <option value="ballon thermodynamique">Ballon thermodynamique</option>
+							    <option value="gestionnaire de domotique">Gestionnaire de Domotique</option>
+							    <option value="pompe à chaleur">Pompe à chaleur</option>
+							</select>
+						</div>
+					</div>
+					<div class="line-form">
+						<input type="button" class="input-final button_precedent" onclick="nextPrev(-1)" name="precedent" value="Précédent">
+						<input type="submit" class="input-final" name="submit_devis" value="Confirmer">
+					</div>
+				</form>
+			</div>
+			<div class="block-devis-d">
+				<div class="case-block-devis-d">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-professionnel.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-professionnel.png' %}">
+						<img alt="professionnel" src="{% static 'vitrine/img/page_contact/icon-professionnel.png' %}" class="icon-block-devis-d">
+					</picture>
+					<p class="text-block-devis-d">Des professionnels à votre service</p>
+					<div class="trait"></div>
+				</div>
+				<div class="case-block-devis-d case-block-devis-d-milieu">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-argent.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-argent.png' %}">
+						<img alt="argent" src="{% static 'vitrine/img/page_contact/icon-argent.png' %}" class="icon-block-devis-d">
+					</picture>
+					<p class="text-block-devis-d">Aucun frais</p>
+					<div class="trait"></div>
+				</div>
+				<div class="case-block-devis-d">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/icon-horloge.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/icon-horloge.png' %}">
+						<img alt="horloge" src="{% static 'vitrine/img/page_contact/icon-horloge.png' %}" class="icon-block-devis-d">
+					</picture>
+					<p class="text-block-devis-d">Une réponse sous 48h</p>
+					<div class="trait"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="section-parrainage" class="step2 display-none">
+			<div class="block-parrainage-g">
+				<h2 class="titre-form">Vous êtes parainné ?</h2>
+				<form method='POST' action='' class="form"> {% csrf_token %}
+					<div class="form-information-gen">
+						<h2 class="titre-in-form">Informations de votre parrain :</h2>
+						<div class="line-form">
+	            			<div class="control-group">
+						        <input type="text" name="nom" placeholder="Nom de votre parrain" class="input-format-simple" required >
+								<input type="text" name="prenom" placeholder="Prenom de votre parrain" class="input-format-simple input-droite" required >
+							</div>
+							<div class="line-form">
+								<input type="text" name="code" placeholder="Code de parrainage" class="input-format-long" required >
+	    					</div>
+						</div>
+					</div>
+					<div class="line-form">
+						<input type="button" class="input-final button_precedent" onclick="nextPrev(-1)" name="precedent" value="Précédent">
+						<input type="submit" class="input-final" name="submit_parrainage" value="Confirmer">
+					</div>
+				</form>
+			</div>
+			<div class="block-parrainage-d">
+				<div class="case-block-parrainage-d">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/argent-parrain.webp' %}">
+					    <source type="image/png" srcset="{% static 'vitrine/img/page_contact/argent-parrain.png' %}">
+						<img alt="argent-parrain" src="{% static 'vitrine/img/page_contact/argent-parrain.png' %}" class="icon-block-parrainage-d">
+					</picture>
+					<p class="text-block-parrainage-d">Économisez de l'argent grâce au parrainage</p>
+					<div class="trait"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="section-presse" class="step2 display-none">
+			<div style="max-width: 880px;margin-left: auto;margin-right: auto;">
+				<p style="width: 100px;cursor:pointer;width: 120px;cursor: pointer;border: 1px solid #75cba8;font-family: 'PlexLight';text-align: center;border-radius: 10px;color: #75cba8;font-size: 17px;font-weight: bold;" onclick="nextPrev(-1)">&#8592; 	Précédent</p>
+			</div>
+			<h2 class="step2-titre-contact">Presse</h2>
+			<form method='POST' action=''> {% csrf_token %}
+				<div class="">
+					<div class="">
+						<input type="text" name="a" placeholder="a" class="" required >
+						<input type="text" name="b" placeholder="b" class="" required >
+					</div>
+					<div class="">
+						<input type="text" name="c" placeholder="c" class="" required >
+					</div>
+					<div class="">
+						<input type="submit" name="submit_presse" value="Confirmer">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+<script src="{% static 'vitrine/js/aide_contact.js' %}"></script>
+
+{% endblock %}

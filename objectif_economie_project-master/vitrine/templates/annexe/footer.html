@@ -1,0 +1,72 @@
+{% load staticfiles %}
+
+<section id="footer">
+	<footer class="footer">
+		<div class="taille-footer">
+			<div class="qui-sommes-nous div-footer">
+				<h2>OBJECTIF ÉCONOMIE</h2>
+				<ul class="ul-qsm">
+					<li class="li-qsm">
+						<a href="{% url 'index' %}" class="a-qsm">Qui sommes nous ?</a>
+					</li>
+					<li class="li-qsm">
+						<a href="{% url 'contact' %}" class="a-qsm">Nous contacter</a>
+					</li>
+					<li class="li-qsm">
+						<a href="{% url 'nous_rejoindre' %}" class="a-qsm">Nous rejoindre</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nos-offres div-footer">
+				<h2>NOS OFFRES</h2>
+				<ul class="ul-offres">
+					<li class="li-offres">
+						<a href="{% url 'index' %}" class="a-offres">La pompe à chaleur</a>
+					</li>
+					<li class="li-offres">
+						<a href="{% url 'index' %}" class="a-offres">Ballon thermodynamique</a>
+					</li>
+					<li class="li-offres">
+						<a href="{% url 'index' %}" class="a-offres">Isolation à 1€</a>
+					</li>
+					<li class="li-offres">
+						<a href="{% url 'index' %}" class="a-offres">Gestionnaire de Domotique</a>
+					</li>
+					<li class="li-offres">
+						<a href="{% url 'index' %}" class="a-offres">Chaudière</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nos-services div-footer">
+				<h2>NOS SERVICES</h2>
+				<ul class="ul-services">
+					<li class="li-services">
+						<a href="{% url 'sav' %}" class="a-services">SAV</a>
+					</li>
+					<li class="li-services">
+						<a href="{% url 'entretien' %}" class="a-services">Entretien</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mentions-legales div-footer">
+				<h2>MENTIONS LÉGALES</h2>
+				<ul class="ul-mentions-legales">
+					<li class="li-mentions-legales">
+						<a href="{% url 'mentions_legales' %}" class="a-mentions-legales">Mentions légales</a>
+					</li>
+					<li class="li-mentions-legales">
+						<a href="{% url 'cee' %}" class="a-mentions-legales">Certificats d’Économies d’Énergie</a>
+					</li>
+					<li class="li-mentions-legales">
+						<a href="{% url 'condition_generale_de_vente' %}" class="a-mentions-legales">Conditions Générales de Souscription</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="trait-blanc">
+		</div>
+		<div class="copyright">
+			<h3>COPYRIGHT © 2020 - TOUS DROITS RÉSERVÉS À OBJECTIF ECONOMIE.</h3>
+		</div>
+	</footer>
+</section>

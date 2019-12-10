@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block seo %}
+<meta name="Description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:description" content="Objectif économie est spécialisée dans le conseil, la vente, l’installation de solutions de chauffage tel que la pompe à chaleur, isolation, panneaux solaires photovoltaiques, thermiques et autres solutions de Sanitaire en France.">
+<meta property="og:title" content="Objectif Économie | Certificats d'Économies d'Énergie ">
+<title>Objectif Économie | Certificats d'Économies d'Énergie </title>
+
+<link rel="canonique" href="https://www.objectifeconomie.fr/" />
+<link type="text/css" href="{% static 'vitrine/css/mentions_legales_pc.css' %}" media="only screen and (min-width: 992px)" rel="stylesheet">
+<link type="text/css" href="{% static 'vitrine/css/mentions_legales_tel.css' %}" media="only screen and (max-width: 992px)" rel="stylesheet">
+{% endblock %}
+
+{% block link %}
+{% endblock %}
+{% block content %}
+<section>
+	<h1 class="titre-p-ml">Certificats d'Économies d'Énergie</h1>
+	<div class="div-ml">
+		<h2>1- Certificats d’Économies d’Énergie (CEE)</h2>
+		<p>Les Certificats d'Économie d'Énergie sont mis à disposition par les pouvoirs publics en contrepartie des opérations d'économies d'énergie réalisées ou incitées par certaines personnes morales dites "éligibles".<br><br>
+		Ce dispositif constitue un instrument de maîtrise de la demande énergétique et repose  sur une obligation. Les éligibles sont ainsi incités à promouvoir activement l’efficacité énergétique auprès des consommateurs finaux d’énergie : ménages, collectivités  territoriales ou professionnels.
+		</p>
+		<h2>2- Bailleurs sociaux, syndicats de copropriété</h2>
+		<p>Les sociétés d’HLM, les Offices Publics de l’Habitat et les entreprises sociales pour l’habitat appelés « bailleurs sociaux » ont un rôle prépondérant dans la lutte contre le gaspillage des énergies et la précarité énergétique. Les enjeux sont nombreux tels que la réduction des charges des locataires, l’amélioration de leurs logements, etc... Les certificats d’économies d’énergie permettent aux bailleurs sociaux d’entamer des travaux en bénéficiant de réductions non négligeables.</p>
+		<h2>3- Particuliers</h2>
+		<p>La volonté de faire des économies d’énergie est un réel défi que chacun devrait pouvoir relever pour lui-elle mais aussi pour sa communauté et son environnement. De l’isolation thermique au choix de la chaudière,Objectif Économie vous conseille sur les matériaux nécessaires à votre confort quotidien et vous permet, grâce aux certificats d’économies d’énergie, de réaliser de nombreuses économies sur les travaux et de maîtriser les consommations énergétiques.</p>
+	</div>
+</section>
+{% endblock %}
